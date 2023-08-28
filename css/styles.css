@@ -1,0 +1,308 @@
+:root {
+  --color-iris: #4d5ae5;
+  --color-ocean: #404bbf;
+  --color-navy-blue: #2e2f42;
+  --color-green: #31d0aa;
+  --color-slate: #434455;
+  --color-light-slate: #8e8f99;
+  --color-cornflower: #e7e9fc;
+  --color-cloud: #f4f4fd;
+  --color-navy-blue-modal: #2e2f42;
+  --color-grey: #2e2f42;
+  --color-white: #ffffff;
+  --color-dairy: #fcfcfc;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--color-slate);
+  background-color: var(--color-white);
+  font-style: normal;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  max-width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.list {
+  list-style-type: none;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+/* Header */
+.page-header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--color-cornflower);
+}
+.page-header-container {
+  display: flex;
+  justify-content: space-between;
+}
+.menu {
+  display: flex;
+  align-items: center;
+}
+.nav-list {
+  display: flex;
+  gap: 40px;
+}
+.nav-link {
+  padding: 24px 0;
+}
+.address-list {
+  display: flex;
+  gap: 40px;
+}
+.logo-part-one {
+  display: inline-block;
+  color: var(--color-iris);
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-right: 76px;
+}
+.logo-part-two {
+  color: var(--color-navy-blue-modal);
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 0.03em;
+}
+.logo-part-two-footer {
+  color: var(--color-cloud);
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 0.03em;
+}
+/* Відступ між логотипом та параграфом */
+.logo-footer {
+  margin-bottom: 18px;
+}
+/* Links navigation */
+.nav-link {
+  color: var(--color-navy-blue);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--color-ocean);
+}
+.address {
+  font-style: normal;
+}
+.contacts {
+  color: var(--color-slate);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.32px;
+}
+.contacts:hover,
+.contacts:focus {
+  color: var(--color-ocean);
+}
+/* Hero section */
+.hero-section {
+  background-color: var(--color-navy-blue);
+  padding: 188px 0;
+}
+.hero-section-title {
+  color: var(--color-white);
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  text-align: center;
+  max-width: 496px;
+  margin: 0 auto 48px;
+  margin-bottom: 64px;
+}
+.button-service {
+  display: block;
+  color: var(--color-white);
+  background-color: var(--color-iris);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  margin: 0 auto;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  padding: 16px 32px;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+.button-service:hover,
+.button-service:focus {
+  background-color: var(--color-ocean);
+}
+/* Goals section */
+.goals-section {
+  padding: 120px 0;
+}
+.goals-container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.goals-list {
+  display: flex;
+  gap: 24px;
+}
+.goals-list-item {
+  width: calc((100% - 72px) / 4);
+}
+.goals-list-title {
+  color: var(--color-navy-blue);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
+}
+.goals-list-text {
+  color: var(--color-slate);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+/* Members section */
+.team-section {
+  background-color: var(--color-cloud);
+  height: 732px;
+  padding: 120px 0;
+}
+.team-title {
+  color: var(--color-navy-blue);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 72px;
+}
+.team-list {
+  display: flex;
+  gap: 24px;
+  text-align: center;
+}
+.team-list-item {
+  width: calc((100% - 72px) / 4);
+  background-color: var(--color-white);
+  border-radius: 0px 0px 4px 4px;
+  background: var(--white, #fff);
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+.team-info-container {
+  padding: 32px 0;
+}
+.team-list-title {
+  color: var(--color-navy-blue-modal);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
+}
+.team-list-text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+/* Portfolio section */
+.portfolio-section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.portfolio-title {
+  line-height: 1.1;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  margin-bottom: 72px;
+}
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+.portfolio-list-item {
+  width: calc((100% - 48px) / 3);
+  background-color: var(--color-white);
+}
+.portfolio-info-container {
+  padding: 32px 16px;
+  border: 1px solid var(--color-cornflower);
+  border-top: none;
+}
+.portfolio-list-title {
+  color: var(--color-navy-blue);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
+}
+.portfolio-list-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+.footer {
+  background-color: var(--color-grey);
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.footer-text {
+  color: var(--color-cloud);
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  max-width: 264px;
+}
