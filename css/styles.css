@@ -86,6 +86,24 @@ a {
 }
 .nav-link {
   padding: 24px 0;
+  position: relative;
+  color: var(--color-ocean);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--color-ocean);
+}
+.nav-link::after {
+  display: block;
+  width: 100%;
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 4px;
+  background-color: var(--color-ocean);
+  border-radius: 2px;
 }
 .address-list {
   display: flex;
@@ -300,7 +318,7 @@ a {
   align-items: center;
   border-radius: 50%;
   background-color: var(--color-iris);
-  position: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-media-icon {
   fill: var(--color-cloud);
