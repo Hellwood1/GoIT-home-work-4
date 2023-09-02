@@ -355,6 +355,10 @@ a {
 }
 .footer-container {
   display: flex;
+  align-items: baseline;
+}
+.footer-logo-container {
+  margin-right: 120px;
 }
 .footer-text {
   color: var(--color-cloud);
@@ -372,6 +376,8 @@ a {
 }
 .footer-media-list {
   display: flex;
+  justify-content: center;
+  align-content: center;
   gap: 16px;
 }
 .footer-media-list-item {
@@ -386,6 +392,7 @@ a {
   justify-content: center;
   background-color: var(--color-iris);
   align-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-media-icon {
   fill: var(--color-cloud);
